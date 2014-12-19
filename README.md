@@ -5,6 +5,8 @@ DevLeague-Notes
 a = Wed
 b = Thu
 c = Sat
+e = event
+g = guest
 
 W1c (09/27/2014)
 
