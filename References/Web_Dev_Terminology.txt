@@ -1,0 +1,139 @@
+
+Browser - Renders server or client side HTML content, CSS styles, and JavaScript behavior. Examples are Chrome, Mozilla Firefox, MS Intenet Explorer, Safari, Opera, etc.
+
+Server - Communicates with and supports web client requests.
+
+nodejs - JavaScript platform.
+
+HTML - HyperText Markup Language.  Latest version is HTML 5.
+
+CSS - Cascading Style Sheets provide styling for HTML markup (web page content).  Latest version is CSS 3.
+
+JavaScript - A scripting language that implements website behavior.  Latest version is JS 1.8.5.
+
+Console - User interface to enable interaction with web pages via a browser's Developer Tools.
+
+Terminal - Provides input and output interface for a computer system.
+
+Shell - An operating system utility that provides interaction with the kernel.
+
+Bash - A shell utility available on a *nix operating system.
+
+Zsh - An advanced version of bash that provides interaction with the kernel.  A very useful implementation is oh-my-zsh.
+
+Package Manager - a utility that installs, updates, removes, and maintains software packages.  Different flavors of *nix are distinguished by their package manager: Mac OS X uses brew, Ubuntu Linux uses apt-get, etc.
+
+npm - "node package manager"  is a package manager for nodejs.
+
+bower - a package manager for Foundation.
+
+brew - "homebrew" is a package manager for Mac OS X and Ruby, an is also used for ___________?
+
+apt-get - "advanced packaging tool" is a package manager for Ubuntu Linux.
+
+TDD - "Test Driven Development" is a unit testing development concept whereby tests are written first, and then the implementation proceeds only as tests are passed.
+
+BDD - "Behavior Driven Development" is a development concept based on TDD whereby behavior tests are written first, and then the implementation proceeds only as tests are passed.
+
+Jasmine - Jasmine is a Behavior Driven Development testing framework for JavaScript. It does not rely on browsers, DOM, or any JavaScript framework. Thus it's suited for websites, Node.js projects, or anywhere that JavaScript can run.
+
+Mocha - A JavaScript test framework running on node.js, featuring browser support, asynchronous testing, test coverage reports, and use of any assertion library.
+
+Chai - A BDD and TDD assertion library for nodejs.
+
+Agile - A group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement and encourages rapid and flexible response to change.
+
+Scrum - A flexible and holistic approach to Agile software development whereby developers work as a unit in a physical co-location as a team self-organizes.  Customers provide constant feedback and are aollowed to change their requirements to ensure the end product fully meets their needs.
+
+jQuery - A fast, small, and feature-rich JavaScript library. It makes HTML DOM traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+
+HTTP - "HyperText Transfer Protocol" is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text.
+
+HTTP Method - Request methods in HTTP 1.1:
+
+GET
+Requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect (a Safe Method).
+
+HEAD
+Asks for the response identical to the one that would correspond to a GET request, but without the response body. This is useful for retrieving meta-information written in response headers, without having to transport the entire content.
+
+POST 
+Requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.
+
+PUT
+An update request that the enclosed entity be stored under the supplied URI. If the URI refers to an already existing resource, it is modified; if the URI does not point to an existing resource, then the server can create the resource with that URI.
+
+DELETE
+Deletes the specified resource.
+
+TRACE
+Echoes back the received request so that a client can see what (if any) changes or additions have been made by intermediate servers.
+
+OPTIONS
+Returns the HTTP methods that the server supports for the specified URL. This can be used to check the functionality of a web server by requesting '*' instead of a specific resource.
+
+CONNECT
+Converts the request connection to a transparent TCP/IP tunnel, usually to facilitate SSL-encrypted communication (HTTPS) through an unencrypted HTTP proxy. See HTTP CONNECT Tunneling.
+
+PATCH
+Applies partial modifications to a resource.  
+
+HTTP servers are required to implement at least the GET and HEAD methods and, whenever possible, also the OPTIONS method.
+
+REST - "REpresentational State Transfer" is an architectural style consisting of a coordinated set of architectural constraints applied to components, connectors, and data elements, within a distributed hypermedia system. REST ignores the details of component implementation and protocol syntax in order to focus on the roles of components, the constraints upon their interaction with other components, and their interpretation of significant data elements.  A REST system provides RESTful services (i.e., serves JSON data).
+
+URI - "Uniform Resource Identifier" is a string of characters used to identify the name of a resource. Such identification enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols. Schemes specifying a concrete syntax and associated protocols define each URI. The most common form of URI is the uniform resource locator (URL), frequently referred to informally as a web address. More rarely seen in usage is the uniform resource name (URN), which was designed to complement URLs by providing a mechanism for the identification of resources in particular namespaces.
+
+URL - "Uniform Resource Locator" also known as a web address, particularly when used with HTTP, is a specific character string that constitutes a reference to a resource. Most web browsers display the URL of a web page above the page in an address bar. A typical URL might look like:  http://www.example.org/wiki/Main_Page
+RFC 3986 (2005) classifies URLs as a specific type of uniform resource identifier (URI), although many people use the two terms interchangeably. A URL implies the means to access an indicated resource, which is not true of every URI. URLs occur most commonly to reference web pages (http), but can also have a role in file transfer (ftp), email (mailto), database access (JDBC), and many other applications (see URI scheme for a list).
+
+OOP - "Objet-Oriented Programming" 
+
+Inheritence
+JS Primitive Datatypes - Number, String, Boolean, undefined, NULL
+Framework
+Library
+DOM
+xhr - "XML HTTP Request" 
+Callback Functions - 
+Asynchronous Execution
+Synchronous Processes
+HTTP Status codes
+SCM
+Git
+Repository
+Commit
+Clone
+Branch
+Tag
+Fork
+UML - "Unified Modeling Language" 
+Underscore - Collections API for JavaScript arrays
+lo-dash - Another collections API for JavaScript arrays
+Array
+reduce
+map
+filter
+splce
+Hash Table
+Iteration
+For Loop
+Event listener
+Event Handler
+Meteorjs
+SASS
+SCSS
+live-reload
+Hex Code
+Responsive Layout
+Foundation
+Bootstrap
+CSS Framework
+CSS Reset
+Scope
+Context
+Closures
+Recursion
+JSON
+gulp
+grunt
