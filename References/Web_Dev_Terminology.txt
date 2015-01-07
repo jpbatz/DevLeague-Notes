@@ -118,33 +118,42 @@ SCM - Source Code Management -
 
 Git - SCM (generic), specifically GitHub, BitBucket, etc.
 
-Repository - code storage
+Repository - git - code storage
 
-Commit - git command to save changes to a local repostitory
+commit - git command to save changes to a local repostitory
 
-Clone - git command to create a local repository
+clone - git command to create a local repository
 
-Branch - 
+branch - git - a separate thread of development that can run concurrently with other development efforts in the same code base.
 
-Tag
+tag - git - a version marker of a partcular branch at a moment in time.
 
-Fork
+fork - git - replication of an external repository into your repository.
 
 UML - "Unified Modeling Language" 
 
-Array
+Array - (data structure) An ordered (indexed) set of objects.
 
 Underscore - Collections API for JavaScript arrays
 
-lo-dash - Another collections API for JavaScript arrays
+lo-dash - Another collections API for JavaScript arrays; superset of Underscore.
+    More consistent cross-environment iteration support for arrays, strings, objects, 
+    and arguments objects.  Updated more frequently than Underscore.
 
-reduce
+reduce - Reduces a collection to a value which is the accumulated result of 
+    running each element in the collection through the callback, 
+    where each successive callback execution consumes the return value of the previous execution. 
+    If accumulator is not provided the first element of the collection will be used as the initial accumulator value. 
+    The callback is bound to thisArg and invoked with four arguments; (accumulator, value, index|key, collection).
+        _.reduce(collection, [callback=_.identity], [accumulator], [thisArg])
+        
+map - Creates an array of values by running each element in the collection through the callback
+        _.map(collection, [callback=_.identity], [thisArg])
 
-map
+filter - Iterates over elements of a collection, returning an array of all elements the callback returns truthy for.
+        _.filter(collection, [callback=_.identity], [thisArg])
 
-filter
-
-splce
+splce - 
 
 Hash Table
 
@@ -156,22 +165,37 @@ Event listener
 
 Event Handler
 
-Meteorjs
-SASS
-SCSS
-live-reload
-Hex Code
-Responsive Layout
-Foundation
-Bootstrap
-CSS Framework
-CSS Reset
+Meteorjs - A complete platform for building web and mobile apps in pure JavaScript.
 
+live-reload - Monitors changes in the file system, and as soon as you save a file, 
+    it is preprocessed as needed, and the browser is refreshed.  When you change a 
+    CSS file or an image, the browser is updated instantly without reloading the page.
 
-Recursion
-JSON
-gulp
-grunt
+Hex Code - base 16 number system
+
+Responsive Layout - A website that is designed to addresses the unique benefits and constraints of a range of devices
+
+Foundation - A responsive front-end framework.
+
+Bootstrap - A mobile first front-end framework.
+
+CSS Framework - CSS frameworks are pre-prepared software frameworks that are meant to allow for easier, 
+    more standards-compliant web design using the Cascading Style Sheets language. 
+    Most of these frameworks contain at least a grid. (i.e., Bootstrap and Foundation).
+
+CSS Reset - Reset styles reduce browser inconsistencies with default styles.  (i.e., meyerweb reset)
+
+SASS - Syntactically Awesome Style Sheets - Indentation syntax.  
+
+SCSS - Sassy CSS - The new syntax uses brackets and semicolons.  Superset of SASS and CSS, minus the indentation syntax.
+
+Recursion - When a function repeatedly calls itself
+
+JSON - JavaScript Object Notation
+
+gulp - Task runner, workflow automator.
+
+grunt - JavaScript task runner that performs repetitive tasks.
 
 Scope - range of accessibility of a variable.
 
