@@ -153,7 +153,7 @@ map - Creates an array of values by running each element in the collection throu
 filter - Iterates over elements of a collection, returning an array of all elements the callback returns truthy for.
         _.filter(collection, [callback=_.identity], [thisArg])
 
-splce - 
+splce - ?? splice ??
 
 Hash Table
 
@@ -208,4 +208,14 @@ Closures - A function having access to the parent scope,
 
 Promises -
 
+Templating - 
+EJS - Templating engine
+Jade - Templating engine
+Handlebars - Templating engine
+Less - 
+MVC - (Data) Model View Controller - 
+Authentication - A user is who they say they are
+Authorization - Permission to a resource or role
+Session - User's authenticated session on the server
+Cookies - User's info on browser client
 
