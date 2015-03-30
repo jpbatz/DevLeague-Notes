@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Testing CDN</title>
+        <link href="http://cdn.foundation5.zurb.com/foundation.css"/>
+        <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+    </head>
+
+    <body>
+        
+        <div class="row">
+        <div class="large-12 columns">
+        <h1>This is a Test</h1>
+        </div></div>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+        <script type="text/javascript" src="/program.js"></script>
+    </body>
+
+</html>
