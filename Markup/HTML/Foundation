@@ -1,3 +1,5 @@
+Template and sample index.html with CDN:
+
 <!doctype html>
 
 <html class="no-js" lang="en">
@@ -23,3 +25,6 @@
     </body>
 
 </html>
+
+
+Website: http://foundation.zurb.com/
