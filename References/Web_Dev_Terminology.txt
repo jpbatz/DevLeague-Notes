@@ -3,7 +3,7 @@ Browser - Renders server or client side HTML content, CSS styles, and JavaScript
 
 Server - Communicates with and supports web client requests.
 
-nodejs - JavaScript platform.  (ee http://nodejs.org, learnyounode at https://github.com/rvagg/learnyounode)
+nodejs (or, node) - JavaScript platform.  (ee http://nodejs.org, learnyounode at https://github.com/rvagg/learnyounode)
 
 HTML - HyperText Markup Language.  Latest version is HTML 5.
 
@@ -80,7 +80,8 @@ RFC 3986 (2005) classifies URLs as a specific type of uniform resource identifie
 
 OOP - "Objet-Oriented Programming" 
 
-Inheritence
+Inheritence - A class extends the features (properties and/or behaviors) of a super class.
+
 JS Primitive Datatypes - Number, String, Boolean, undefined, NULL
 
 Framework - An abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software. 
@@ -100,13 +101,13 @@ Library - A collection of implementations of behavior organized in such a way th
 DOM - Document Object Model (HTML) - A tree structure of HTML elements contained within the confines of the document, whose root is the html element.  
     The document is contianed within a window.
 
-Synchronous Processes
+Synchronous Processes - Response occurs in the order of request initiation.
 
 xhr - "XML HTTP Request" 
 
-Asynchronous Execution - 
+Asynchronous Execution - Response is does not necessarily occur in the order of request initiation.
 
-Callback Functions - 
+Callback Functions - Enables asynchronous execution by ...
 
 HTTP Status codes - Response codes to HTTP requests are: 
     200's = success, 
@@ -155,7 +156,7 @@ filter - Iterates over elements of a collection, returning an array of all eleme
 
 splce - ?? splice ??
 
-Hash Table
+Hash Table - Key : Value pairs
 
 Iteration
 
@@ -173,7 +174,7 @@ live-reload - Monitors changes in the file system, and as soon as you save a fil
 
 Hex Code - base 16 number system
 
-Responsive Layout - A website that is designed to addresses the unique benefits and constraints of a range of devices
+Responsive Layout - A website that is designed to addresses the unique benefits and constraints of a range of mobile, table, and desktop devices
 
 Foundation - A responsive front-end framework.
 
@@ -191,7 +192,7 @@ SCSS - Sassy CSS - The new syntax uses brackets and semicolons.  Superset of SAS
 
 Recursion - When a function repeatedly calls itself
 
-JSON - JavaScript Object Notation
+JSON - JavaScript Object Notation, an array of objects [{}, {}, {},...]
 
 gulp - Task runner, workflow automator.
 
@@ -206,7 +207,7 @@ Closures - A function having access to the parent scope,
     Private variables can be made possible with closures, through self invoking 
     functions.
 
-Promises -
+Promises - ?? Enables syncronous execution in asynchronous environment ?? 
 
 Templating - 
 EJS - Templating engine
@@ -214,8 +215,55 @@ Jade - Templating engine
 Handlebars - Templating engine
 Less - 
 MVC - (Data) Model View Controller - 
+MVVM - 
+
 Authentication - A user is who they say they are
 Authorization - Permission to a resource or role
 Session - User's authenticated session on the server
 Cookies - User's info on browser client
+
+Deployment - A push to production (live) server, app store, website, etc. for the public end users.
+
+Dev Ops - Developer operations administration.  A system administrator who specializes in software development.
+
+Web Servers - (i.e., nginx, heroku) ??
+
+VPS - Virtual Private Server - dedicated private servers
+
+Concerns of live servers:
+  Security - 
+  Scaling - 
+  High Availability - 
+
+ssh - secure shell connection (remote login command)
+$ ssh -p [port #] username@hostname.com
+
+ssh key - private key authorization.
+
+Scaling Concerns:
+1) Node Clustering - optimizing performance by distributing the load among all available processors.
+
+2) HTTP Proxy Server - direct your domain to the IP address of your (nginx) server.  Many VPS' reside on server.
+
+3) Load Balancing - scale out to other servers in a round-robin sequenct.
+
+
+whois - *ix command that returns registration information about a domain
+
+DNS - Domain Name Sever - server resolution ??
+
+Order of DNS resolution:
+1. Browser Cache
+2. /etc/hosts
+3. /etc/resolv.conf
+
+Hosting - 
+Ex. Digital Ocean, Vultr, Namecheap, Rackspace, etc.
+
+dig telodigrade.com - see dns settings
+
+
+
+
+
 
