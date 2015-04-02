@@ -101,13 +101,15 @@ Library - A collection of implementations of behavior organized in such a way th
 DOM - Document Object Model (HTML) - A tree structure of HTML elements contained within the confines of the document, whose root is the html element.  
     The document is contianed within a window.
 
-Synchronous Processes - Response occurs in the order of request initiation.
+Synchronous Processes - Blocking...Response occurs in the order of request initiation.
 
 xhr - "XML HTTP Request" 
 
-Asynchronous Execution - Response is does not necessarily occur in the order of request initiation.
+Asynchronous Execution - Non-blocking event loop.  Response is does not necessarily occur in the order of request initiation.
 
-Callback Functions - Enables asynchronous execution by ...
+    Callback Functions - Enables asynchronous execution by ...
+        function print_num
+    Promises - ?? Enables syncronous execution in asynchronous environment ?? 
 
 HTTP Status codes - Response codes to HTTP requests are: 
     200's = success, 
@@ -207,8 +209,6 @@ Closures - A function having access to the parent scope,
     Private variables can be made possible with closures, through self invoking 
     functions.
 
-Promises - ?? Enables syncronous execution in asynchronous environment ?? 
-
 Templating - 
 EJS - Templating engine
 Jade - Templating engine
@@ -233,14 +233,23 @@ VPS - Virtual Private Server - dedicated private servers
 Concerns of live servers:
   Security - 
   Scaling - 
-  High Availability - 
+  High Availability - able to handle large amounts of traffic concurrently
 
 ssh - secure shell connection (remote login command)
 $ ssh -p [port #] username@hostname.com
 
 ssh key - private key authorization.
 
+CSR - Cert/Sign/Request 3rd party
+
+hash function - one-way data encryption algorithm (not reversible to original input); 
+    get the same output for the same input.
+    collision is improbable.  
+    fast! (but authentication should be slow)
+    ex. passwords, SHA, Blowfish, TwoFish
+
 Scaling Concerns:
+
 1) Node Clustering - optimizing performance by distributing the load among all available processors.
 
 2) HTTP Proxy Server - direct your domain to the IP address of your (nginx) server.  Many VPS' reside on server.
