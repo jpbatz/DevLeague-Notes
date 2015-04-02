@@ -1,17 +1,177 @@
+Web Development Terminology
+===========================
 
 Browser - Renders server or client side HTML content, CSS styles, and JavaScript behavior. Examples are Chrome, Mozilla Firefox, MS Intenet Explorer, Safari, Opera, etc.
 
-Server - Communicates with and supports web client requests.
-
-nodejs (or, node) - JavaScript platform.  (ee http://nodejs.org, learnyounode at https://github.com/rvagg/learnyounode)
-
 HTML - HyperText Markup Language.  Latest version is HTML 5.
+
+DOM - Document Object Model (HTML) - A tree structure of HTML elements contained within the confines of the document, whose root is the html element.  
+    The document is contianed within a window.
+
+Console - User interface to enable interaction with web pages via a browser's Developer Tools.
+
+Styles:
+=======
 
 CSS - Cascading Style Sheets provide styling for HTML markup (web page content).  Latest version is CSS 3.
 
+Hex Code - base 16 number system
+
+Responsive Layout - A website that is designed to addresses the unique benefits and constraints of a range of mobile, table, and desktop devices
+
+Foundation - A responsive front-end framework.
+
+Bootstrap - A mobile first front-end framework.
+
+CSS Framework - CSS frameworks are pre-prepared software frameworks that are meant to allow for easier, 
+    more standards-compliant web design using the Cascading Style Sheets language. 
+    Most of these frameworks contain at least a grid. (i.e., Bootstrap and Foundation).
+
+CSS Reset - Reset styles reduce browser inconsistencies with default styles.  (i.e., meyerweb reset)
+
+SASS - Syntactically Awesome Style Sheets - Indentation syntax.  
+
+SCSS - Sassy CSS - The new syntax uses brackets and semicolons.  Superset of SASS and CSS, minus the indentation syntax.
+
+Templating - 
+EJS - Templating engine
+Jade - Templating engine
+Handlebars - Templating engine
+Less - 
+
+
+Programming:
+============
+
+Functional Programming - 
+
 JavaScript - A scripting language that implements website behavior.  Latest version is JS 1.8.5.
 
-Console - User interface to enable interaction with web pages via a browser's Developer Tools.
+JS Primitive Datatypes - Number, String, Boolean, undefined, NULL
+
+
+
+
+Array - (data structure) An ordered (indexed) set of objects.
+
+Underscore - Collections API for JavaScript arrays
+
+lo-dash - Another collections API for JavaScript arrays; superset of Underscore.
+    More consistent cross-environment iteration support for arrays, strings, objects, 
+    and arguments objects.  Updated more frequently than Underscore.
+
+reduce - Reduces a collection to a value which is the accumulated result of 
+    running each element in the collection through the callback, 
+    where each successive callback execution consumes the return value of the previous execution. 
+    If accumulator is not provided the first element of the collection will be used as the initial accumulator value. 
+    The callback is bound to thisArg and invoked with four arguments; (accumulator, value, index|key, collection).
+        _.reduce(collection, [callback=_.identity], [accumulator], [thisArg])
+        
+map - Creates an array of values by running each element in the collection through the callback
+        _.map(collection, [callback=_.identity], [thisArg])
+
+filter - Iterates over elements of a collection, returning an array of all elements the callback returns truthy for.
+        _.filter(collection, [callback=_.identity], [thisArg])
+
+splce - ?? splice ??
+
+Hash Table - Key : Value pairs
+
+Iteration
+
+For Loop
+
+Recursion - When a function repeatedly calls itself
+
+Scope - range of accessibility of a variable.
+
+Context - what "this" refers to
+
+Closures - A function having access to the parent scope, 
+    even after the parent function has closed (a var that remains open in memory).  
+    Private variables can be made possible with closures, through self invoking 
+    functions.
+
+
+Design Patterns:
+================
+
+MVC - (Data) Model View Controller - 
+MVVM - 
+
+
+SCM - Source Code Management - 
+============================
+
+Git - SCM (generic), specifically GitHub, BitBucket, etc.
+
+Repository - git - code storage
+
+commit - git command to save changes to a local repostitory
+
+clone - git command to create a local repository
+
+branch - git - a separate thread of development that can run concurrently with other development efforts in the same code base.
+
+tag - git - a version marker of a partcular branch at a moment in time.
+
+fork - git - replication of an external repository into your repository.
+
+
+OOP - "Objet-Oriented Programming": 
+==================================
+
+UML - "Unified Modeling Language" 
+
+Inheritence - A class extends the features (properties and/or behaviors) of a super class.
+
+
+Platforms:
+=========
+
+nodejs (or, node) - JavaScript platform.  (ee http://nodejs.org, learnyounode at https://github.com/rvagg/learnyounode)
+
+
+Synchronous Processes - Blocking...Response occurs in the order of request initiation.
+
+
+Asynchronous Execution - Non-blocking event loop.  Response is does not necessarily occur in the order of request initiation.
+
+    Callback Functions - Enables asynchronous execution by ...
+        function print_num
+    Promises - ?? Enables syncronous execution in asynchronous environment ?? 
+
+
+Libraries:
+==========
+
+Library - A collection of implementations of behavior organized in such a way that it can be used by multiple programs that have no connection to each other.
+
+jQuery - A fast, small, and feature-rich JavaScript library. It makes HTML DOM traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+
+
+Frameworks:
+===========
+
+Framework - An abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software. 
+    A software framework is a universal, reusable software environment that provides particular functionality as part of a larger software platform to facilitate development of software applications, products and solutions. 
+    Software frameworks may include support programs, compilers, code libraries, tool sets, and application programming interfaces (APIs) that bring together all the different components to enable development of a project or solution.
+
+    Frameworks contain key distinguishing features that separate them from normal libraries:
+
+        o inversion of control: In a framework, unlike in libraries or normal user applications, the overall program's flow of control is not dictated by the caller, but by the framework.[1]
+        o default behavior: This default behavior must be some useful behavior and not a series of no-ops.
+        o extensibility: A framework can be extended by the user usually by selective overriding or specialized by user code to provide specific functionality.
+        o non-modifiable framework code: The framework code, in general, is not supposed to be modified, while accepting user-implemented extensions. 
+            In other words, users can extend the framework, but should not modify its code.
+
+
+
+
+Dev Ops:
+========
+
+Dev Ops - Developer operations administration.  A system administrator who specializes in software development.
 
 Terminal - Provides input and output interface for a computer system.
 
@@ -31,6 +191,21 @@ brew - "homebrew" is a package manager for Mac OS X and Ruby, an is also used fo
 
 apt-get - "advanced packaging tool" is a package manager for Ubuntu Linux.
 
+gulp - Task runner, workflow automator.
+
+grunt - JavaScript task runner that performs repetitive tasks.
+Meteorjs - A complete platform for building web and mobile apps in pure JavaScript.
+
+live-reload - Monitors changes in the file system, and as soon as you save a file, 
+    it is preprocessed as needed, and the browser is refreshed.  When you change a 
+    CSS file or an image, the browser is updated instantly without reloading the page.
+
+
+
+
+Testing:
+========
+
 TDD - "Test Driven Development" is a unit testing development concept whereby tests are written first, and then the implementation proceeds only as tests are passed.
 
 BDD - "Behavior Driven Development" is a development concept based on TDD whereby behavior tests are written first, and then the implementation proceeds only as tests are passed.
@@ -41,11 +216,9 @@ Mocha - A JavaScript test framework running on node.js, featuring browser suppor
 
 Chai - A BDD and TDD assertion library for nodejs.
 
-Agile - A group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement and encourages rapid and flexible response to change.
 
-Scrum - A flexible and holistic approach to Agile software development whereby developers work as a unit in a physical co-location as a team self-organizes.  Customers provide constant feedback and are aollowed to change their requirements to ensure the end product fully meets their needs.
 
-jQuery - A fast, small, and feature-rich JavaScript library. It makes HTML DOM traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+Server - Communicates with and supports web client requests.
 
 HTTP - "HyperText Transfer Protocol" is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text.
 
@@ -78,38 +251,7 @@ URI - "Uniform Resource Identifier" is a string of characters used to identify t
 URL - "Uniform Resource Locator" also known as a web address, particularly when used with HTTP, is a specific character string that constitutes a reference to a resource. Most web browsers display the URL of a web page above the page in an address bar. A typical URL might look like:  http://www.example.org/wiki/Main_Page
 RFC 3986 (2005) classifies URLs as a specific type of uniform resource identifier (URI), although many people use the two terms interchangeably. A URL implies the means to access an indicated resource, which is not true of every URI. URLs occur most commonly to reference web pages (http), but can also have a role in file transfer (ftp), email (mailto), database access (JDBC), and many other applications (see URI scheme for a list).
 
-OOP - "Objet-Oriented Programming" 
-
-Inheritence - A class extends the features (properties and/or behaviors) of a super class.
-
-JS Primitive Datatypes - Number, String, Boolean, undefined, NULL
-
-Framework - An abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software. 
-    A software framework is a universal, reusable software environment that provides particular functionality as part of a larger software platform to facilitate development of software applications, products and solutions. 
-    Software frameworks may include support programs, compilers, code libraries, tool sets, and application programming interfaces (APIs) that bring together all the different components to enable development of a project or solution.
-
-    Frameworks contain key distinguishing features that separate them from normal libraries:
-
-        o inversion of control: In a framework, unlike in libraries or normal user applications, the overall program's flow of control is not dictated by the caller, but by the framework.[1]
-        o default behavior: This default behavior must be some useful behavior and not a series of no-ops.
-        o extensibility: A framework can be extended by the user usually by selective overriding or specialized by user code to provide specific functionality.
-        o non-modifiable framework code: The framework code, in general, is not supposed to be modified, while accepting user-implemented extensions. 
-            In other words, users can extend the framework, but should not modify its code.
-
-Library - A collection of implementations of behavior organized in such a way that it can be used by multiple programs that have no connection to each other.
-
-DOM - Document Object Model (HTML) - A tree structure of HTML elements contained within the confines of the document, whose root is the html element.  
-    The document is contianed within a window.
-
-Synchronous Processes - Blocking...Response occurs in the order of request initiation.
-
 xhr - "XML HTTP Request" 
-
-Asynchronous Execution - Non-blocking event loop.  Response is does not necessarily occur in the order of request initiation.
-
-    Callback Functions - Enables asynchronous execution by ...
-        function print_num
-    Promises - ?? Enables syncronous execution in asynchronous environment ?? 
 
 HTTP Status codes - Response codes to HTTP requests are: 
     200's = success, 
@@ -117,105 +259,9 @@ HTTP Status codes - Response codes to HTTP requests are:
     400's = resource not found error, 
     500's = server error
 
-SCM - Source Code Management - 
-
-Git - SCM (generic), specifically GitHub, BitBucket, etc.
-
-Repository - git - code storage
-
-commit - git command to save changes to a local repostitory
-
-clone - git command to create a local repository
-
-branch - git - a separate thread of development that can run concurrently with other development efforts in the same code base.
-
-tag - git - a version marker of a partcular branch at a moment in time.
-
-fork - git - replication of an external repository into your repository.
-
-UML - "Unified Modeling Language" 
-
-Array - (data structure) An ordered (indexed) set of objects.
-
-Underscore - Collections API for JavaScript arrays
-
-lo-dash - Another collections API for JavaScript arrays; superset of Underscore.
-    More consistent cross-environment iteration support for arrays, strings, objects, 
-    and arguments objects.  Updated more frequently than Underscore.
-
-reduce - Reduces a collection to a value which is the accumulated result of 
-    running each element in the collection through the callback, 
-    where each successive callback execution consumes the return value of the previous execution. 
-    If accumulator is not provided the first element of the collection will be used as the initial accumulator value. 
-    The callback is bound to thisArg and invoked with four arguments; (accumulator, value, index|key, collection).
-        _.reduce(collection, [callback=_.identity], [accumulator], [thisArg])
-        
-map - Creates an array of values by running each element in the collection through the callback
-        _.map(collection, [callback=_.identity], [thisArg])
-
-filter - Iterates over elements of a collection, returning an array of all elements the callback returns truthy for.
-        _.filter(collection, [callback=_.identity], [thisArg])
-
-splce - ?? splice ??
-
-Hash Table - Key : Value pairs
-
-Iteration
-
-For Loop
-
-Event listener
-
-Event Handler
-
-Meteorjs - A complete platform for building web and mobile apps in pure JavaScript.
-
-live-reload - Monitors changes in the file system, and as soon as you save a file, 
-    it is preprocessed as needed, and the browser is refreshed.  When you change a 
-    CSS file or an image, the browser is updated instantly without reloading the page.
-
-Hex Code - base 16 number system
-
-Responsive Layout - A website that is designed to addresses the unique benefits and constraints of a range of mobile, table, and desktop devices
-
-Foundation - A responsive front-end framework.
-
-Bootstrap - A mobile first front-end framework.
-
-CSS Framework - CSS frameworks are pre-prepared software frameworks that are meant to allow for easier, 
-    more standards-compliant web design using the Cascading Style Sheets language. 
-    Most of these frameworks contain at least a grid. (i.e., Bootstrap and Foundation).
-
-CSS Reset - Reset styles reduce browser inconsistencies with default styles.  (i.e., meyerweb reset)
-
-SASS - Syntactically Awesome Style Sheets - Indentation syntax.  
-
-SCSS - Sassy CSS - The new syntax uses brackets and semicolons.  Superset of SASS and CSS, minus the indentation syntax.
-
-Recursion - When a function repeatedly calls itself
 
 JSON - JavaScript Object Notation, an array of objects [{}, {}, {},...]
 
-gulp - Task runner, workflow automator.
-
-grunt - JavaScript task runner that performs repetitive tasks.
-
-Scope - range of accessibility of a variable.
-
-Context - what "this" refers to
-
-Closures - A function having access to the parent scope, 
-    even after the parent function has closed (a var that remains open in memory).  
-    Private variables can be made possible with closures, through self invoking 
-    functions.
-
-Templating - 
-EJS - Templating engine
-Jade - Templating engine
-Handlebars - Templating engine
-Less - 
-MVC - (Data) Model View Controller - 
-MVVM - 
 
 Authentication - A user is who they say they are
 Authorization - Permission to a resource or role
@@ -223,8 +269,6 @@ Session - User's authenticated session on the server
 Cookies - User's info on browser client
 
 Deployment - A push to production (live) server, app store, website, etc. for the public end users.
-
-Dev Ops - Developer operations administration.  A system administrator who specializes in software development.
 
 Web Servers - (i.e., nginx, heroku) ??
 
@@ -256,12 +300,9 @@ Scaling Concerns:
 
 3) Load Balancing - scale out to other servers in a round-robin sequenct.
 
-
-whois - *ix command that returns registration information about a domain
-
 DNS - Domain Name Sever - server resolution ??
 
-Order of DNS resolution:
+Order of DNS resolution for browser request:
 1. Browser Cache
 2. /etc/hosts
 3. /etc/resolv.conf
@@ -269,10 +310,24 @@ Order of DNS resolution:
 Hosting - 
 Ex. Digital Ocean, Vultr, Namecheap, Rackspace, etc.
 
-dig telodigrade.com - see dns settings
+whois - *ix command that returns domain registration information
+
+dig telodigrade.com - displays dns settings
 
 
+Database
+========
+
+Relational
+
+Document
+
+ORM - Object Relational Model
 
 
+Team Development:
+=================
 
+Agile - A group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement and encourages rapid and flexible response to change.
 
+Scrum - A flexible and holistic approach to Agile software development whereby developers work as a unit in a physical co-location as a team self-organizes.  Customers provide constant feedback and are aollowed to change their requirements to ensure the end product fully meets their needs.
